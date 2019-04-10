@@ -1,0 +1,65 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+#circle-form {
+  background: var(--base);
+  border: 0.5rem outset pink;
+  border-radius: 50%;
+  height: 150px;
+  margin: 2rem;
+  padding: 1rem;
+  width: 150px;
+}
+
+#square-form {
+  background: var(--base);
+  border: 0.5rem outset rgb(53, 126, 168);
+  outline-offset: 0.5rem;
+  height: 150px;
+  margin: 2rem;
+  padding: 1rem;
+  width: 150px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+
+
+.hl {
+  color: var(--base);
+}
+
+body {
+  text-align: center;
+  background: #b6d2e6;
+  color: rgb(5, 43, 92);
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+.form-div{
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin: 10rem;
+}
+
