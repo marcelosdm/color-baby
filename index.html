@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Color Baby</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Let's learn the <span class="hl">colors</span></h1>
 
-    <article class="shapes">
-      <div class="form-div">
-        <label for="spacing">Color:</label>
-        <input id="base" type="color" name="base" value="#ffc600" />
-        <div id="square-form"></div>
+    <div class="controls">
+      <div class="shape">
+        <label for="square">Square Color</label>
+        <input type="color" id="square" name="square" value="#ffcc66" />
+        <div class="square"></div>
       </div>
-      <div class="form-div">
-        <label for="spacing">Color:</label>
-        <input id="base" type="color" name="base" value="#ffc600" />
-        <div id="circle-form"></div>
+      <div class="shape">
+        <label for="circle">Circle Color</label>
+        <input type="color" id="circle" name="circle" value="#ffcc66" />
+        <div class="circle"></div>
       </div>
-    </article>
+    </div>
 
     <script src="index.js"></script>
   </body>

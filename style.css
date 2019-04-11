@@ -1,21 +1,17 @@
 :root {
-  --base: #ffc600;
+  --square: #ffc600;
+  --circle: #ffc600;
   --spacing: 10px;
   --blur: 10px;
 }
 
-#circle-form {
+img {
   background: var(--base);
-  border: 0.5rem outset pink;
-  border-radius: 50%;
-  height: 150px;
-  margin: 2rem;
-  padding: 1rem;
-  width: 150px;
+  padding: 50px;
 }
 
-#square-form {
-  background: var(--base);
+.square {
+  background: var(--square);
   border: 0.5rem outset rgb(53, 126, 168);
   outline-offset: 0.5rem;
   height: 150px;
@@ -24,13 +20,16 @@
   width: 150px;
 }
 
-img {
-  padding: var(--spacing);
-  background: var(--base);
-  filter: blur(var(--blur));
+.circle {
+  background: var(--circle);
+  border: 0.5rem outset rgb(53, 126, 168);
+  border-radius: 50%;
+  outline-offset: 0.5rem;
+  height: 150px;
+  margin: 2rem;
+  padding: 1rem;
+  width: 150px;
 }
-
-
 
 .hl {
   color: var(--base);
@@ -45,9 +44,10 @@ body {
   font-size: 50px;
 }
 
-.shapes {
+.shape {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
   margin-bottom: 50px;
 }
 
@@ -61,5 +61,9 @@ input {
   flex-direction:column;
   justify-content: space-between;
   margin: 10rem;
+}
+
+.controls {
+  display: flex;
 }
 
