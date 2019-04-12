@@ -1,11 +1,11 @@
 :root {
-  --base: #ffc600;
-  --sky: #052b5c;
+  --sun: #ffc600;
+  --sky: #75a9ee;
 }
 
 body {
-  background: #53a7e4;
-  color: var(--sky);
+  background: var(--sky);
+  color: #052b5c;
   font-family: 'helvetica neue', sans-serif;
   font-size: 25px;
   font-weight: 100;
@@ -14,8 +14,16 @@ body {
   text-align: center;
 }
 
-.hl {
-  color: var(--base);
+h1>span {
+  background: rgb(243, 152, 78);
+}
+
+.hl-sun {
+  color: var(--sun);
+}
+
+.hl-sky {
+  color: var(--sky);
 }
 
 .controls {
@@ -30,10 +38,11 @@ input {
   width: 80px;
 }
 
-.change-color {
+.change-sun, .change-sky {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
   position: relative;
   top: 200px;
   width: 300px;
@@ -78,7 +87,7 @@ input {
 
 .sun {
   animation: animate 20s linear infinite;
-  background: var(--base);
+  background: var(--sun);
   border: 0.5rem outset rgb(255, 181, 21);
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(255, 255, 8, .5);
@@ -94,7 +103,7 @@ input {
 }
 
 .sun li {
-  background: var(--base);
+  background: var(--sun);
   /* box-shadow: 0 0 15px rgba(255, 255, 8, .5); */
   height: 5px;
   left: 50%;

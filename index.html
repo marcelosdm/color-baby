@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Color the <span class="hl">sky</span></h1>
+    <h1>
+      <span>
+        Color the <span class="hl-sun">sun</span> and
+        <span class="hl-sky">sky</span>
+      </span>
+    </h1>
 
     <div class="controls">
       <div class="sky">
@@ -26,9 +31,13 @@
           <li></li>
         </ul>
       </div>
-      <div class="change-color">
-        <label for="base">Sun Color</label>
-        <input type="color" id="base" name="base" value="#ffc600" />
+      <div class="change-sun">
+        <label for="sun">Sun Color</label>
+        <input type="color" id="sun" name="sun" value="#ffc600" />
+      </div>
+      <div class="change-sky">
+        <label for="sky">Sky Color</label>
+        <input type="color" id="sky" name="sky" value="#75a9ee" />
       </div>
     </div>
 
